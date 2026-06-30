@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated outputs
+*.png
+
+# Local corpus cache
+nltk_data/
