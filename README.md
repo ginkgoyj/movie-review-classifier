@@ -26,14 +26,8 @@
 
 ## 项目结构
 
-- 主脚本：
-  - `goover/hw.py`
-- 另一版脚本：
-  - `goover/h1.py`
-- 语料目录：
-  - `goover/nltk_data/corpora/movie_reviews`
-
-仓库中保留了两个脚本版本，整体流程相近，代码注释和组织方式略有差异。
+- 主脚本：`sentiment_classifier_main.py`
+- 早期版本：`archive/sentiment_classifier_early.py`
 
 ## 核心实现
 
@@ -75,14 +69,16 @@
 
 ## 如何运行
 
+运行主版本：
+
 ```powershell
-python goover/hw.py
+python sentiment_classifier_main.py
 ```
 
-或：
+如需查看早期版本：
 
 ```powershell
-python goover/h1.py
+python archive/sentiment_classifier_early.py
 ```
 
 如果本地缺少语料，脚本会在项目目录下的 `nltk_data` 中准备所需资源。
@@ -93,7 +89,7 @@ python goover/h1.py
 
 ## 后续优化方向
 
-- 统一两个脚本的结构和参数配置
+- 统一主版本和早期版本中的公共流程
 - 增加固定随机种子与实验配置说明
 - 补充更多模型对比
 
